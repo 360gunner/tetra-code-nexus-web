@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -84,148 +83,6 @@
     background: linear-gradient(135deg, hsl(var(--broadcasting)), hsl(var(--tech-gradient-2)));
   }
   
-  .aviation-gradient {
-    background: linear-gradient(135deg, hsl(var(--aviation)), hsl(var(--cloud)));
-  }
-  
-  .saas-gradient {
-    background: linear-gradient(135deg, hsl(var(--saas)), hsl(var(--tech-gradient-1)));
-  }
-  
-  .fintech-gradient {
-    background: linear-gradient(135deg, hsl(var(--fintech)), hsl(var(--tech-gradient-3)));
-  }
-  
-  .cloud-gradient {
-    background: linear-gradient(135deg, hsl(var(--cloud)), hsl(var(--tech-gradient-1)));
-  }
-  
-  .gaming-gradient {
-    background: linear-gradient(135deg, hsl(var(--gaming)), hsl(var(--tech-gradient-3)));
-  }
-  
-  .ai-gradient {
-    background: linear-gradient(135deg, hsl(var(--ai)), hsl(var(--tech-gradient-2)));
-  }
-  
-  .mobile-gradient {
-    background: linear-gradient(135deg, hsl(var(--mobile)), hsl(var(--tech-gradient-1)));
-  }
-
-  /* Home Page Backgrounds */
-  .bg-overview {
-    background: 
-      radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
-      linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
-  }
-  
-  .bg-overview::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M30 30l15-15v30l-15-15zm-15 0L0 15v30l15-15z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.3;
-  }
-
-  .bg-mission {
-    background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
-    position: relative;
-  }
-  
-  .bg-mission::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='50' cy='50' r='40'/%3E%3Ccircle cx='50' cy='50' r='25'/%3E%3Ccircle cx='50' cy='50' r='10'/%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.2;
-  }
-
-  .bg-leadership {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23000' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-  }
-
-  .bg-news {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .bg-news::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='0' y='0' width='20' height='20'/%3E%3Crect x='20' y='20' width='20' height='20'/%3E%3C/g%3E%3C/svg%3E");
-    animation: slideNews 20s linear infinite;
-  }
-  
-  @keyframes slideNews {
-    0% { transform: translateX(-40px); }
-    100% { transform: translateX(0); }
-  }
-
-  /* Broadcasting & Media Backgrounds */
-  .bg-broadcasting-tv {
-    background: 
-      radial-gradient(ellipse at center, rgba(139, 69, 19, 0.3) 0%, transparent 70%),
-      linear-gradient(45deg, #8B4513 0%, #FF4500 100%);
-    position: relative;
-  }
-  
-  .bg-broadcasting-tv::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-      radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 30%),
-      radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
-    animation: flicker 3s ease-in-out infinite alternate;
-  }
-  
-  @keyframes flicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.8; }
-  }
-
-  .bg-broadcasting-radio {
-    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
-    position: relative;
-  }
-  
-  .bg-broadcasting-radio::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='wave' x='0' y='0' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0 50 Q25 25 50 50 T100 50' stroke='%23ffffff' stroke-width='2' fill='none' opacity='0.1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23wave)'/%3E%3C/svg%3E");
-    animation: wave 4s ease-in-out infinite;
-  }
-  
-  @keyframes wave {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(-50px); }
-  }
-
   /* Aviation Backgrounds */
   .bg-aviation {
     background: 
@@ -234,13 +91,16 @@
     position: relative;
   }
 
-  /* SaaS Backgrounds */
-  .bg-saas {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  .bg-aviation-enhanced {
+    background: 
+      linear-gradient(180deg, #1e3a8a 0%, #3b82f6 50%, #e0f2fe 100%),
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
     position: relative;
+    overflow: hidden;
   }
   
-  .bg-saas::before {
+  .bg-aviation-enhanced::before {
     content: '';
     position: absolute;
     top: 0;
@@ -248,17 +108,91 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='35' y='35' width='15' height='15'/%3E%3Crect x='55' y='10' width='15' height='15'/%3E%3Crect x='10' y='55' width='15' height='15'/%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.6;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M50 20L65 50L100 55L70 75L75 110L50 95L25 110L30 75L0 55L35 50Z'/%3E%3Cpath d='M150 120L165 150L200 155L170 175L175 210L150 195L125 210L130 175L100 155L135 150Z'/%3E%3C/g%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='100' viewBox='0 0 300 100'%3E%3Cpath d='M0 50 Q75 30 150 50 T300 50' stroke='%23ffffff' stroke-width='1' fill='none' opacity='0.15'/%3E%3Cpath d='M0 60 Q100 40 200 60 T400 60' stroke='%23ffffff' stroke-width='1' fill='none' opacity='0.1'/%3E%3C/svg%3E");
+    animation: aviationFloat 20s ease-in-out infinite;
+  }
+  
+  .bg-aviation-enhanced::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 100px;
+    height: 100px;
+    background: 
+      radial-gradient(circle, transparent 40%, rgba(255, 255, 255, 0.1) 41%, rgba(255, 255, 255, 0.1) 45%, transparent 46%),
+      radial-gradient(circle, transparent 60%, rgba(255, 255, 255, 0.05) 61%, rgba(255, 255, 255, 0.05) 65%, transparent 66%);
+    border-radius: 50%;
+    animation: radarSpin 8s linear infinite;
+  }
+  
+  @keyframes aviationFloat {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(-10px) translateY(-5px); }
+    50% { transform: translateX(5px) translateY(-10px); }
+    75% { transform: translateX(-5px) translateY(5px); }
+  }
+  
+  @keyframes radarSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* SaaS Backgrounds */
+  .bg-saas-enhanced {
+    background: 
+      linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%),
+      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bg-saas-enhanced::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Crect x='20' y='20' width='30' height='20' rx='3'/%3E%3Crect x='60' y='30' width='25' height='15' rx='2'/%3E%3Crect x='100' y='25' width='20' height='18' rx='2'/%3E%3Ccircle cx='40' cy='80' r='8'/%3E%3Ccircle cx='80' cy='85' r='6'/%3E%3Ccircle cx='110' cy='75' r='5'/%3E%3Cpath d='M40 80L80 85M80 85L110 75' stroke='%23ffffff' stroke-width='1' opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+    animation: saasFloat 15s ease-in-out infinite;
+  }
+  
+  .bg-saas-enhanced::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 60%, rgba(59, 130, 246, 0.2) 0%, transparent 30%),
+      radial-gradient(circle at 80% 40%, rgba(96, 165, 250, 0.15) 0%, transparent 25%);
+    animation: saasFlow 12s ease-in-out infinite alternate;
+  }
+  
+  @keyframes saasFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  
+  @keyframes saasFlow {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
   }
 
   /* Fintech Backgrounds */
-  .bg-fintech {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  .bg-fintech-enhanced {
+    background: 
+      linear-gradient(135deg, #1e3a8a 0%, #059669 50%, #10b981 100%),
+      radial-gradient(circle at 40% 60%, rgba(16, 185, 129, 0.2) 0%, transparent 50%);
     position: relative;
+    overflow: hidden;
   }
   
-  .bg-fintech::before {
+  .bg-fintech-enhanced::before {
     content: '';
     position: absolute;
     top: 0;
@@ -266,22 +200,37 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='5'/%3E%3Ctext x='30' y='35' text-anchor='middle' font-size='8' fill='%23ffffff'%3E%24%3C/text%3E%3C/g%3E%3C/svg%3E");
-    animation: float 6s ease-in-out infinite;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Ctext x='30' y='50' font-size='24' font-family='Arial'%3E%24%3C/text%3E%3Ctext x='120' y='80' font-size='20' font-family='Arial'%3E€%3C/text%3E%3Ctext x='60' y='130' font-size='18' font-family='Arial'%3E₿%3C/text%3E%3Ctext x='150' y='160' font-size='16' font-family='Arial'%3E₦%3C/text%3E%3Cpath d='M20 100L180 100M100 20L100 180' stroke='%23ffffff' stroke-width='0.5' opacity='0.15'/%3E%3C/g%3E%3C/svg%3E");
+    animation: fintechPulse 8s ease-in-out infinite;
   }
   
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+  .bg-fintech-enhanced::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='100' viewBox='0 0 300 100'%3E%3Cpath d='M0 80L50 60L100 70L150 40L200 50L250 30L300 45' stroke='%23ffffff' stroke-width='2' fill='none' opacity='0.2'/%3E%3Cpath d='M0 90L50 75L100 85L150 60L200 70L250 55L300 65' stroke='%23ffffff' stroke-width='1' fill='none' opacity='0.15'/%3E%3C/svg%3E");
+    background-size: cover;
+  }
+  
+  @keyframes fintechPulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
   }
 
   /* Cloud Backgrounds */
-  .bg-cloud {
-    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  .bg-cloud-enhanced {
+    background: 
+      linear-gradient(135deg, #f0f9ff 0%, #bae6fd 50%, #0ea5e9 100%),
+      radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.4) 0%, transparent 50%);
     position: relative;
+    overflow: hidden;
   }
   
-  .bg-cloud::before {
+  .bg-cloud-enhanced::before {
     content: '';
     position: absolute;
     top: 0;
@@ -289,47 +238,79 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M25 60c-5.5 0-10-4.5-10-10s4.5-10 10-10c1.8-7.2 8.2-12.5 15.8-12.5S54.2 32.8 56 40c5.5 0 10 4.5 10 10s-4.5 10-10 10H25z'/%3E%3C/g%3E%3C/svg%3E");
-    animation: cloudMove 15s ease-in-out infinite;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M50 80c-8 0-15-7-15-15s7-15 15-15c3-11 13-19 24-19s21 8 24 19c8 0 15 7 15 15s-7 15-15 15H50z'/%3E%3Cpath d='M200 120c-6 0-11-5-11-11s5-11 11-11c2-8 9-14 18-14s16 6 18 14c6 0 11 5 11 11s-5 11-11 11H200z'/%3E%3Cpath d='M150 160c-5 0-9-4-9-9s4-9 9-9c2-6 7-11 14-11s12 5 14 11c5 0 9 4 9 9s-4 9-9 9H150z'/%3E%3C/g%3E%3C/svg%3E");
+    animation: cloudDrift 25s linear infinite;
   }
   
-  @keyframes cloudMove {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(20px); }
+  .bg-cloud-enhanced::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='50' y='50' width='20' height='30' rx='2'/%3E%3Crect x='80' y='60' width='15' height='25' rx='2'/%3E%3Crect x='110' y='55' width='18' height='28' rx='2'/%3E%3Cpath d='M60 50L90 60M90 60L120 55M60 80L90 85M90 85L120 83' stroke='%23ffffff' stroke-width='1' opacity='0.15'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  @keyframes cloudDrift {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100px); }
   }
 
   /* Gaming Backgrounds */
-  .bg-gaming {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  .bg-gaming-enhanced {
+    background: 
+      linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%),
+      radial-gradient(circle at 20% 80%, #e91e63 0%, transparent 40%),
+      radial-gradient(circle at 80% 20%, #8e44ad 0%, transparent 40%);
     position: relative;
+    overflow: hidden;
   }
   
-  .bg-gaming::before {
+  .bg-gaming-enhanced::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-      radial-gradient(circle at 25% 25%, #ff006e 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, #8338ec 0%, transparent 50%);
-    opacity: 0.3;
-    animation: gameGlow 4s ease-in-out infinite alternate;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cg fill='%23ff006e' fill-opacity='0.2'%3E%3Crect x='20' y='20' width='10' height='10'/%3E%3Crect x='40' y='40' width='8' height='8'/%3E%3Crect x='80' y='30' width='12' height='12'/%3E%3Crect x='110' y='60' width='6' height='6'/%3E%3C/g%3E%3Cg fill='%238e44ad' fill-opacity='0.15'%3E%3Ccircle cx='60' cy='80' r='4'/%3E%3Ccircle cx='100' cy='100' r='6'/%3E%3Ccircle cx='130' cy='90' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    animation: gamingGlow 4s ease-in-out infinite alternate;
   }
   
-  @keyframes gameGlow {
-    0% { opacity: 0.2; }
-    100% { opacity: 0.4; }
+  .bg-gaming-enhanced::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #00f5ff 50%, transparent 100%);
+    animation: gamingGrid 3s ease-in-out infinite;
+  }
+  
+  @keyframes gamingGlow {
+    0% { opacity: 0.6; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes gamingGrid {
+    0%, 100% { transform: scaleX(0.5); opacity: 0.5; }
+    50% { transform: scaleX(1); opacity: 1; }
   }
 
   /* AI Backgrounds */
-  .bg-ai {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  .bg-ai-enhanced {
+    background: 
+      linear-gradient(135deg, #0c0a1e 0%, #1e1b4b 50%, #3730a3 100%),
+      radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
     position: relative;
+    overflow: hidden;
   }
   
-  .bg-ai::before {
+  .bg-ai-enhanced::before {
     content: '';
     position: absolute;
     top: 0;
@@ -337,46 +318,43 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='circuit' x='0' y='0' width='50' height='50' patternUnits='userSpaceOnUse'%3E%3Cpath d='M10 10h30v30h-30z' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.1'/%3E%3Ccircle cx='25' cy='25' r='3' fill='%23ffffff' opacity='0.1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23circuit)'/%3E%3C/svg%3E");
-    animation: circuit 8s linear infinite;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%2300f5ff' stroke-width='1' fill='none' opacity='0.3'%3E%3Ccircle cx='50' cy='50' r='3'/%3E%3Ccircle cx='100' cy='80' r='2'/%3E%3Ccircle cx='150' cy='60' r='4'/%3E%3Ccircle cx='80' cy='120' r='2'/%3E%3Ccircle cx='130' cy='140' r='3'/%3E%3Cpath d='M50 50L100 80M100 80L150 60M100 80L80 120M80 120L130 140M150 60L130 140'/%3E%3C/g%3E%3C/svg%3E");
+    animation: aiNeural 6s ease-in-out infinite;
   }
   
-  @keyframes circuit {
-    0% { transform: translateX(0) translateY(0); }
-    25% { transform: translateX(-25px) translateY(0); }
-    50% { transform: translateX(-25px) translateY(-25px); }
-    75% { transform: translateX(0) translateY(-25px); }
-    100% { transform: translateX(0) translateY(0); }
-  }
-
-  /* Solutions Backgrounds */
-  .bg-solutions-individuals {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-    position: relative;
-  }
-
-  .bg-solutions-business {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
-  }
-
-  .bg-solutions-government {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    position: relative;
-  }
-
-  .bg-solutions-developers {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-    position: relative;
-  }
-
-  /* About Backgrounds */
-  .bg-about-story {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
+  .bg-ai-enhanced::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 60px;
+    height: 60px;
+    background: 
+      radial-gradient(circle, rgba(0, 245, 255, 0.4) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: aiOrb 8s ease-in-out infinite;
   }
   
-  .bg-about-story::before {
+  @keyframes aiNeural {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+  }
+  
+  @keyframes aiOrb {
+    0%, 100% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.2) translateY(-10px); }
+  }
+
+  /* Mobile Backgrounds */
+  .bg-mobile-enhanced {
+    background: 
+      linear-gradient(135deg, #667eea 0%, #764ba2 100%),
+      radial-gradient(circle at 30% 70%, rgba(102, 126, 234, 0.4) 0%, transparent 50%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bg-mobile-enhanced::before {
     content: '';
     position: absolute;
     top: 0;
@@ -384,143 +362,69 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg width='200' height='20' viewBox='0 0 200 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='0' y='8' width='200' height='4'/%3E%3Ccircle cx='20' cy='10' r='6'/%3E%3Ccircle cx='60' cy='10' r='6'/%3E%3Ccircle cx='100' cy='10' r='6'/%3E%3Ccircle cx='140' cy='10' r='6'/%3E%3Ccircle cx='180' cy='10' r='6'/%3E%3C/g%3E%3C/svg%3E");
-  }
-
-  .bg-about-africa {
-    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
-    position: relative;
-  }
-
-  /* Contact Backgrounds */
-  .bg-contact {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='200' viewBox='0 0 150 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='40' y='20' width='25' height='40' rx='5'/%3E%3Crect x='80' y='40' width='20' height='30' rx='4'/%3E%3Crect x='60' y='80' width='30' height='50' rx='6'/%3E%3Ccircle cx='30' cy='120' r='8'/%3E%3Ccircle cx='110' cy='100' r='6'/%3E%3Ccircle cx='90' cy='150' r='4'/%3E%3C/g%3E%3C/svg%3E");
+    animation: mobileFloat 10s ease-in-out infinite;
   }
   
-  .bg-contact::before {
+  .bg-mobile-enhanced::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='20' cy='20' r='10'/%3E%3Ccircle cx='80' cy='80' r='10'/%3E%3Cpath d='M20 20L80 80' stroke='%23ffffff' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
-  }
-
-  /* Support Backgrounds */
-  .bg-support {
-    background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
-    position: relative;
-  }
-
-  /* Developer Backgrounds */
-  .bg-developers {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
+    background: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Crect x='10' y='10' width='15' height='15' rx='3'/%3E%3Crect x='35' y='35' width='12' height='12' rx='2'/%3E%3Crect x='60' y='15' width='10' height='10' rx='2'/%3E%3Crect x='15' y='60' width='18' height='18' rx='4'/%3E%3Crect x='60' y='60' width='8' height='8' rx='1'/%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.8;
   }
   
-  .bg-developers::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ctext x='10' y='20' font-family='monospace' font-size='12'%3E%7B%3C/text%3E%3Ctext x='60' y='60' font-family='monospace' font-size='12'%3E%7D%3C/text%3E%3Ctext x='30' y='40' font-family='monospace' font-size='8'%3Ecode%3C/text%3E%3C/g%3E%3C/svg%3E");
-  }
-
-  /* Partners Backgrounds */
-  .bg-partners {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    position: relative;
-  }
-  
-  .bg-partners::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='25' cy='25' r='10'/%3E%3Ccircle cx='75' cy='75' r='10'/%3E%3Cpath d='M35 35L65 65' stroke='%23ffffff' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E");
+  @keyframes mobileFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-8px) rotate(1deg); }
+    75% { transform: translateY(8px) rotate(-1deg); }
   }
 
   /* Dark mode adjustments */
-  .dark .bg-overview {
+  .dark .bg-aviation-enhanced {
     background: 
-      radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
-      linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+      linear-gradient(180deg, #0c1e36 0%, #1e3a8a 70%, #2563eb 100%),
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
   }
 
-  .dark .bg-mission {
-    background: linear-gradient(45deg, #4a5568 0%, #2d3748 100%);
-  }
-
-  .dark .bg-leadership {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23ffffff' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E");
-  }
-
-  .dark .bg-news {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-  }
-
-  .dark .bg-broadcasting-tv {
+  .dark .bg-saas-enhanced {
     background: 
-      radial-gradient(ellipse at center, rgba(139, 69, 19, 0.2) 0%, transparent 70%),
-      linear-gradient(45deg, #2d3748 0%, #4a5568 100%);
+      linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%),
+      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
   }
 
-  .dark .bg-broadcasting-radio {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-  }
-
-  .dark .bg-aviation {
+  .dark .bg-fintech-enhanced {
     background: 
-      linear-gradient(rgba(45, 55, 72, 0.9), rgba(45, 55, 72, 0.9)),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M50 5L60 40L95 50L60 60L50 95L40 60L5 50L40 40Z'/%3E%3C/g%3E%3C/svg%3E");
+      linear-gradient(135deg, #0c1e36 0%, #0f766e 50%, #059669 100%),
+      radial-gradient(circle at 40% 60%, rgba(10, 250, 180, 0.1) 0%, transparent 50%);
   }
 
-  .dark .bg-saas {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  .dark .bg-cloud-enhanced {
+    background: 
+      linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0ea5e9 100%),
+      radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
   }
 
-  .dark .bg-fintech {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  .dark .bg-gaming-enhanced {
+    background: 
+      linear-gradient(135deg, #0a0a16 0%, #0d1025 50%, #0f2d5c 100%),
+      radial-gradient(circle at 20% 80%, #9d174d 0%, transparent 40%),
+      radial-gradient(circle at 80% 20%, #5b21b6 0%, transparent 40%);
   }
 
-  .dark .bg-cloud {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  .dark .bg-ai-enhanced {
+    background: 
+      linear-gradient(135deg, #080613 0%, #131035 50%, #1e1b4b 100%),
+      radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.2) 0%, transparent 70%);
   }
 
-  .dark .bg-gaming {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-  }
-
-  .dark .bg-ai {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-  }
-
-  .dark .bg-solutions-individuals,
-  .dark .bg-solutions-business,
-  .dark .bg-solutions-government,
-  .dark .bg-solutions-developers {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-  }
-
-  .dark .bg-about-story,
-  .dark .bg-about-africa {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-  }
-
-  .dark .bg-contact,
-  .dark .bg-support,
-  .dark .bg-developers,
-  .dark .bg-partners {
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  .dark .bg-mobile-enhanced {
+    background: 
+      linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%),
+      radial-gradient(circle at 30% 70%, rgba(79, 70, 229, 0.3) 0%, transparent 50%);
   }
 }

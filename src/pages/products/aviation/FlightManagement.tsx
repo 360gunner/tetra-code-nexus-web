@@ -6,22 +6,23 @@ import { Navigation, Calendar, BarChart, Users } from "lucide-react";
 
 const FlightManagement = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-aviation-enhanced">
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-blue-600/20"></div>
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-4" variant="secondary">Aviation & Aerospace</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Flight Management Software</h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <Badge className="mb-4 bg-white/20 text-white border-white/20" variant="secondary">Aviation & Aerospace</Badge>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Flight Management Software</h1>
+            <p className="text-xl text-white/90 mb-8">
               Comprehensive flight operations management system for airlines and aviation companies across Africa.
             </p>
-            <Button size="lg">Get Started</Button>
+            <Button size="lg" className="bg-white text-blue-900 hover:bg-white/90">
+              Get Started
+            </Button>
           </div>
         </div>
       </section>
       
-      <section className="py-20">
+      <section className="py-20 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center">

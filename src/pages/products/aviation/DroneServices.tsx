@@ -6,7 +6,7 @@ import { Plane, Camera, MapPin, Shield, ArrowRight } from "lucide-react";
 
 const DroneServices = () => {
   return (
-    <div className="min-h-screen bg-aviation">
+    <div className="min-h-screen bg-aviation-enhanced">
       <section className="py-20 relative">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">

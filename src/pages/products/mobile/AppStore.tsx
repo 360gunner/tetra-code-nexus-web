@@ -1,17 +1,58 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Smartphone, Download, Shield, Search } from "lucide-react";
 
 const AppStore = () => {
   return (
-    <div className="min-h-screen">
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+    <div className="min-h-screen bg-mobile-enhanced">
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-4" variant="secondary">Mobile & Super Apps</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">TETRACODE App Store</h1>
-            <p className="text-xl text-muted-foreground mb-8">Alternative app store for African mobile applications.</p>
-            <Button size="lg">Browse Apps</Button>
+            <Badge className="mb-4 bg-white/20 text-white border-white/20" variant="secondary">Mobile & Super Apps</Badge>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">TETRACODE App Store</h1>
+            <p className="text-xl text-white/90 mb-8">Alternative app store for African mobile applications.</p>
+            <Button size="lg" className="bg-white text-indigo-700 hover:bg-white/90">
+              <Smartphone className="mr-2 h-5 w-5" />
+              Browse Apps
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">App Store Features</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="text-center">
+              <CardHeader>
+                <Search className="h-12 w-12 mx-auto text-blue-600 mb-4" />
+                <CardTitle>Discover Apps</CardTitle>
+                <CardDescription>Explore locally-relevant applications</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center">
+              <CardHeader>
+                <Download className="h-12 w-12 mx-auto text-green-600 mb-4" />
+                <CardTitle>Data Saving</CardTitle>
+                <CardDescription>Optimized downloads for low bandwidth</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center">
+              <CardHeader>
+                <Shield className="h-12 w-12 mx-auto text-red-600 mb-4" />
+                <CardTitle>Security</CardTitle>
+                <CardDescription>Safe downloads with app verification</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="text-center">
+              <CardHeader>
+                <Smartphone className="h-12 w-12 mx-auto text-purple-600 mb-4" />
+                <CardTitle>Multiple Platforms</CardTitle>
+                <CardDescription>Android, iOS, and web app support</CardDescription>
+              </CardHeader>
+            </Card>
           </div>
         </div>
       </section>
