@@ -2,7 +2,7 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { FileText, Spreadsheet, Monitor, Users } from "lucide-react";
+import { FileText, Table, Monitor, Users } from "lucide-react";
 
 const TetracodeOffice = () => {
   return (
@@ -33,7 +33,7 @@ const TetracodeOffice = () => {
             </Card>
             <Card className="text-center">
               <CardHeader>
-                <Spreadsheet className="h-12 w-12 mx-auto text-green-600 mb-4" />
+                <Table className="h-12 w-12 mx-auto text-green-600 mb-4" />
                 <CardTitle>TETRACODE Sheets</CardTitle>
                 <CardDescription>Powerful spreadsheets with advanced formulas</CardDescription>
               </CardHeader>

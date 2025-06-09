@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Robot, Brain, Database, Cloud } from "lucide-react";
+import { Bot, Brain, Database, Cloud } from "lucide-react";
 
 const TetracodeAi = () => {
   return (
@@ -14,7 +14,7 @@ const TetracodeAi = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">TETRACODE AI</h1>
             <p className="text-xl text-white/90 mb-8">Cloud AI services platform with machine learning capabilities.</p>
             <Button size="lg" className="bg-white text-indigo-700 hover:bg-white/90">
-              <Robot className="mr-2 h-5 w-5" />
+              <Bot className="mr-2 h-5 w-5" />
               Try AI Services
             </Button>
           </div>
@@ -41,7 +41,7 @@ const TetracodeAi = () => {
             </Card>
             <Card className="text-center">
               <CardHeader>
-                <Robot className="h-12 w-12 mx-auto text-indigo-600 mb-4" />
+                <Bot className="h-12 w-12 mx-auto text-indigo-600 mb-4" />
                 <CardTitle>AI Assistants</CardTitle>
                 <CardDescription>Conversational AI for business applications</CardDescription>
               </CardHeader>
