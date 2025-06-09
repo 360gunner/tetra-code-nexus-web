@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -93,10 +92,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="tech-gradient w-8 h-8 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">2mp</span>
-            </div>
-            <span className="font-bold text-xl">2mp services</span>
+            <img 
+              src="/lovable-uploads/7436b0e1-9ebc-417d-841e-5a9ee17103a4.png" 
+              alt="2MP Services Logo" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
