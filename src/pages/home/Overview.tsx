@@ -6,25 +6,24 @@ import { ArrowRight, MapPin, Users, Award, TrendingUp } from "lucide-react";
 
 const Overview = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-overview">
       {/* Hero Section */}
       <section className="relative py-20">
-        <div className="absolute inset-0 tech-gradient opacity-5"></div>
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Pioneering Technology Innovation Across Africa
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white/90 mb-8">
               2mp Services stands at the forefront of technological advancement in Africa, delivering comprehensive solutions that empower communities, businesses, and governments to thrive in the digital age.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="bg-white text-purple-900 hover:bg-white/90">
                 <Link to="/about/our-story">
                   Our Story <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-purple-900">
                 <Link to="/contact/request-demo">Request Demo</Link>
               </Button>
             </div>
@@ -33,43 +32,43 @@ const Overview = () => {
       </section>
 
       {/* Key Metrics */}
-      <section className="py-16 border-t">
+      <section className="py-16 border-t border-white/20 bg-white/10 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <Users className="h-8 w-8 text-primary" />
+              <div className="w-16 h-16 mx-auto bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4">
+                <Users className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold mb-2">50M+</div>
-              <div className="text-muted-foreground">Active Users</div>
+              <div className="text-3xl font-bold mb-2 text-white">50M+</div>
+              <div className="text-white/80">Active Users</div>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <MapPin className="h-8 w-8 text-primary" />
+              <div className="w-16 h-16 mx-auto bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4">
+                <MapPin className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold mb-2">54</div>
-              <div className="text-muted-foreground">African Countries</div>
+              <div className="text-3xl font-bold mb-2 text-white">54</div>
+              <div className="text-white/80">African Countries</div>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <Award className="h-8 w-8 text-primary" />
+              <div className="w-16 h-16 mx-auto bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4">
+                <Award className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold mb-2">15+</div>
-              <div className="text-muted-foreground">Industry Awards</div>
+              <div className="text-3xl font-bold mb-2 text-white">15+</div>
+              <div className="text-white/80">Industry Awards</div>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                <TrendingUp className="h-8 w-8 text-primary" />
+              <div className="w-16 h-16 mx-auto bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4">
+                <TrendingUp className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold mb-2">300%</div>
-              <div className="text-muted-foreground">Growth YoY</div>
+              <div className="text-3xl font-bold mb-2 text-white">300%</div>
+              <div className="text-white/80">Growth YoY</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Company Pillars */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-background/95 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core Pillars</h2>
@@ -79,7 +78,7 @@ const Overview = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg transition-shadow backdrop-blur-sm bg-card/80">
               <CardHeader>
                 <div className="w-20 h-20 mx-auto tech-gradient rounded-full flex items-center justify-center mb-4">
                   <span className="text-2xl text-white">🚀</span>
@@ -91,7 +90,7 @@ const Overview = () => {
               </CardHeader>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg transition-shadow backdrop-blur-sm bg-card/80">
               <CardHeader>
                 <div className="w-20 h-20 mx-auto tech-gradient rounded-full flex items-center justify-center mb-4">
                   <span className="text-2xl text-white">🌍</span>
@@ -103,7 +102,7 @@ const Overview = () => {
               </CardHeader>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg transition-shadow backdrop-blur-sm bg-card/80">
               <CardHeader>
                 <div className="w-20 h-20 mx-auto tech-gradient rounded-full flex items-center justify-center mb-4">
                   <span className="text-2xl text-white">🤝</span>
@@ -119,16 +118,16 @@ const Overview = () => {
       </section>
 
       {/* Leadership Preview */}
-      <section className="py-20">
+      <section className="py-20 bg-white/5 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Visionary Leadership
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Our leadership team brings decades of combined experience in technology, business, and African markets.
             </p>
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-white text-purple-900 hover:bg-white/90">
               <Link to="/leadership">
                 Meet Our Team <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

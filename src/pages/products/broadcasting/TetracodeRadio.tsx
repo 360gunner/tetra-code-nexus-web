@@ -7,25 +7,24 @@ import { Radio, Mic, Headphones, Signal, ArrowRight } from "lucide-react";
 
 const TetracodeRadio = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-broadcasting-radio">
       {/* Hero Section */}
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-red-600/20"></div>
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-4" variant="secondary">Broadcasting & Media</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <Badge className="mb-4 bg-white/20 text-white border-white/20" variant="secondary">Broadcasting & Media</Badge>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               TETRACODE Radio
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Digital radio broadcasting platform connecting communities across Africa with crystal-clear audio streaming and interactive features.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg">
+              <Button size="lg" className="bg-white text-red-900 hover:bg-white/90">
                 <Radio className="mr-2 h-5 w-5" />
                 Listen Live
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="outline" size="lg" asChild className="border-white text-white hover:bg-white hover:text-red-900">
                 <Link to="/contact/request-demo">Start Broadcasting</Link>
               </Button>
             </div>
@@ -34,7 +33,7 @@ const TetracodeRadio = () => {
       </section>
 
       {/* Key Features */}
-      <section className="py-20">
+      <section className="py-20 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Radio Platform Features</h2>
@@ -84,7 +83,7 @@ const TetracodeRadio = () => {
       </section>
 
       {/* Get Started */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

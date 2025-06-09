@@ -111,4 +111,416 @@
   .mobile-gradient {
     background: linear-gradient(135deg, hsl(var(--mobile)), hsl(var(--tech-gradient-1)));
   }
+
+  /* Home Page Backgrounds */
+  .bg-overview {
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+      linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+  }
+  
+  .bg-overview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M30 30l15-15v30l-15-15zm-15 0L0 15v30l15-15z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.3;
+  }
+
+  .bg-mission {
+    background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    position: relative;
+  }
+  
+  .bg-mission::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='50' cy='50' r='40'/%3E%3Ccircle cx='50' cy='50' r='25'/%3E%3Ccircle cx='50' cy='50' r='10'/%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.2;
+  }
+
+  .bg-leadership {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23000' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+  }
+
+  .bg-news {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bg-news::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='0' y='0' width='20' height='20'/%3E%3Crect x='20' y='20' width='20' height='20'/%3E%3C/g%3E%3C/svg%3E");
+    animation: slideNews 20s linear infinite;
+  }
+  
+  @keyframes slideNews {
+    0% { transform: translateX(-40px); }
+    100% { transform: translateX(0); }
+  }
+
+  /* Broadcasting & Media Backgrounds */
+  .bg-broadcasting-tv {
+    background: 
+      radial-gradient(ellipse at center, rgba(139, 69, 19, 0.3) 0%, transparent 70%),
+      linear-gradient(45deg, #8B4513 0%, #FF4500 100%);
+    position: relative;
+  }
+  
+  .bg-broadcasting-tv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 30%),
+      radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
+    animation: flicker 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+
+  .bg-broadcasting-radio {
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+    position: relative;
+  }
+  
+  .bg-broadcasting-radio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='wave' x='0' y='0' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0 50 Q25 25 50 50 T100 50' stroke='%23ffffff' stroke-width='2' fill='none' opacity='0.1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23wave)'/%3E%3C/svg%3E");
+    animation: wave 4s ease-in-out infinite;
+  }
+  
+  @keyframes wave {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-50px); }
+  }
+
+  /* Aviation Backgrounds */
+  .bg-aviation {
+    background: 
+      linear-gradient(rgba(70, 130, 180, 0.8), rgba(70, 130, 180, 0.8)),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M50 5L60 40L95 50L60 60L50 95L40 60L5 50L40 40Z'/%3E%3C/g%3E%3C/svg%3E");
+    position: relative;
+  }
+
+  /* SaaS Backgrounds */
+  .bg-saas {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+  }
+  
+  .bg-saas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='35' y='35' width='15' height='15'/%3E%3Crect x='55' y='10' width='15' height='15'/%3E%3Crect x='10' y='55' width='15' height='15'/%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.6;
+  }
+
+  /* Fintech Backgrounds */
+  .bg-fintech {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    position: relative;
+  }
+  
+  .bg-fintech::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='5'/%3E%3Ctext x='30' y='35' text-anchor='middle' font-size='8' fill='%23ffffff'%3E%24%3C/text%3E%3C/g%3E%3C/svg%3E");
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Cloud Backgrounds */
+  .bg-cloud {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    position: relative;
+  }
+  
+  .bg-cloud::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M25 60c-5.5 0-10-4.5-10-10s4.5-10 10-10c1.8-7.2 8.2-12.5 15.8-12.5S54.2 32.8 56 40c5.5 0 10 4.5 10 10s-4.5 10-10 10H25z'/%3E%3C/g%3E%3C/svg%3E");
+    animation: cloudMove 15s ease-in-out infinite;
+  }
+  
+  @keyframes cloudMove {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+  }
+
+  /* Gaming Backgrounds */
+  .bg-gaming {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+  }
+  
+  .bg-gaming::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 25% 25%, #ff006e 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, #8338ec 0%, transparent 50%);
+    opacity: 0.3;
+    animation: gameGlow 4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes gameGlow {
+    0% { opacity: 0.2; }
+    100% { opacity: 0.4; }
+  }
+
+  /* AI Backgrounds */
+  .bg-ai {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+  }
+  
+  .bg-ai::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='circuit' x='0' y='0' width='50' height='50' patternUnits='userSpaceOnUse'%3E%3Cpath d='M10 10h30v30h-30z' fill='none' stroke='%23ffffff' stroke-width='1' opacity='0.1'/%3E%3Ccircle cx='25' cy='25' r='3' fill='%23ffffff' opacity='0.1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23circuit)'/%3E%3C/svg%3E");
+    animation: circuit 8s linear infinite;
+  }
+  
+  @keyframes circuit {
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(-25px) translateY(0); }
+    50% { transform: translateX(-25px) translateY(-25px); }
+    75% { transform: translateX(0) translateY(-25px); }
+    100% { transform: translateX(0) translateY(0); }
+  }
+
+  /* Solutions Backgrounds */
+  .bg-solutions-individuals {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    position: relative;
+  }
+
+  .bg-solutions-business {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+  }
+
+  .bg-solutions-government {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    position: relative;
+  }
+
+  .bg-solutions-developers {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    position: relative;
+  }
+
+  /* About Backgrounds */
+  .bg-about-story {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+  }
+  
+  .bg-about-story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='200' height='20' viewBox='0 0 200 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='0' y='8' width='200' height='4'/%3E%3Ccircle cx='20' cy='10' r='6'/%3E%3Ccircle cx='60' cy='10' r='6'/%3E%3Ccircle cx='100' cy='10' r='6'/%3E%3Ccircle cx='140' cy='10' r='6'/%3E%3Ccircle cx='180' cy='10' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .bg-about-africa {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    position: relative;
+  }
+
+  /* Contact Backgrounds */
+  .bg-contact {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+  }
+  
+  .bg-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='20' cy='20' r='10'/%3E%3Ccircle cx='80' cy='80' r='10'/%3E%3Cpath d='M20 20L80 80' stroke='%23ffffff' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Support Backgrounds */
+  .bg-support {
+    background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+    position: relative;
+  }
+
+  /* Developer Backgrounds */
+  .bg-developers {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+  }
+  
+  .bg-developers::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ctext x='10' y='20' font-family='monospace' font-size='12'%3E%7B%3C/text%3E%3Ctext x='60' y='60' font-family='monospace' font-size='12'%3E%7D%3C/text%3E%3Ctext x='30' y='40' font-family='monospace' font-size='8'%3Ecode%3C/text%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Partners Backgrounds */
+  .bg-partners {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    position: relative;
+  }
+  
+  .bg-partners::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='25' cy='25' r='10'/%3E%3Ccircle cx='75' cy='75' r='10'/%3E%3Cpath d='M35 35L65 65' stroke='%23ffffff' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Dark mode adjustments */
+  .dark .bg-overview {
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+      linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-mission {
+    background: linear-gradient(45deg, #4a5568 0%, #2d3748 100%);
+  }
+
+  .dark .bg-leadership {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23ffffff' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .dark .bg-news {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-broadcasting-tv {
+    background: 
+      radial-gradient(ellipse at center, rgba(139, 69, 19, 0.2) 0%, transparent 70%),
+      linear-gradient(45deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-broadcasting-radio {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-aviation {
+    background: 
+      linear-gradient(rgba(45, 55, 72, 0.9), rgba(45, 55, 72, 0.9)),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M50 5L60 40L95 50L60 60L50 95L40 60L5 50L40 40Z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .dark .bg-saas {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-fintech {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-cloud {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-gaming {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-ai {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-solutions-individuals,
+  .dark .bg-solutions-business,
+  .dark .bg-solutions-government,
+  .dark .bg-solutions-developers {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-about-story,
+  .dark .bg-about-africa {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
+
+  .dark .bg-contact,
+  .dark .bg-support,
+  .dark .bg-developers,
+  .dark .bg-partners {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  }
 }

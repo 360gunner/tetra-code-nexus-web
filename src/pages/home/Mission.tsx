@@ -4,15 +4,15 @@ import { Target, Eye, Heart, Globe } from "lucide-react";
 
 const Mission = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-mission">
       {/* Hero Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800 dark:text-white">
               Our Mission & Vision
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-gray-700 dark:text-gray-200">
               Driving technological transformation across Africa through innovative solutions that empower communities, businesses, and governments.
             </p>
           </div>
@@ -23,7 +23,7 @@ const Mission = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            <Card className="border-2 border-primary/20 hover:border-primary/40 transition-colors">
+            <Card className="border-2 border-primary/20 hover:border-primary/40 transition-colors backdrop-blur-sm bg-white/90 dark:bg-gray-900/90">
               <CardHeader className="text-center">
                 <div className="w-20 h-20 mx-auto tech-gradient rounded-full flex items-center justify-center mb-4">
                   <Target className="h-10 w-10 text-white" />
@@ -37,7 +37,7 @@ const Mission = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-primary/20 hover:border-primary/40 transition-colors">
+            <Card className="border-2 border-primary/20 hover:border-primary/40 transition-colors backdrop-blur-sm bg-white/90 dark:bg-gray-900/90">
               <CardHeader className="text-center">
                 <div className="w-20 h-20 mx-auto tech-gradient rounded-full flex items-center justify-center mb-4">
                   <Eye className="h-10 w-10 text-white" />
@@ -55,7 +55,7 @@ const Mission = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core Values</h2>
@@ -120,7 +120,7 @@ const Mission = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="border-2 border-primary/20">
+            <Card className="border-2 border-primary/20 backdrop-blur-sm bg-white/90 dark:bg-gray-900/90">
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl mb-4">Our Commitment to Africa</CardTitle>
               </CardHeader>

@@ -42,15 +42,15 @@ const News = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-news">
       {/* Hero Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Latest News & Press
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white/90">
               Stay updated with the latest developments, product launches, and company milestones from 2mp Services.
             </p>
           </div>
@@ -58,7 +58,7 @@ const News = () => {
       </section>
 
       {/* News Grid */}
-      <section className="py-16">
+      <section className="py-16 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {newsItems.map((item, index) => (
@@ -87,7 +87,7 @@ const News = () => {
       </section>
 
       {/* Media Kit */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Media Resources</h2>

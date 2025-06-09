@@ -7,25 +7,24 @@ import { Play, Users, Globe, Zap, ArrowRight } from "lucide-react";
 
 const TetracodeTv = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-broadcasting-tv">
       {/* Hero Section */}
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-600/20"></div>
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-4" variant="secondary">Broadcasting & Media</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <Badge className="mb-4 bg-white/20 text-white border-white/20" variant="secondary">Broadcasting & Media</Badge>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               TETRACODE TV
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Next-generation streaming platform delivering live and on-demand content across Africa with adaptive streaming technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg">
+              <Button size="lg" className="bg-white text-orange-900 hover:bg-white/90">
                 <Play className="mr-2 h-5 w-5" />
                 Start Streaming
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="outline" size="lg" asChild className="border-white text-white hover:bg-white hover:text-orange-900">
                 <Link to="/contact/request-demo">Request Demo</Link>
               </Button>
             </div>
@@ -34,7 +33,7 @@ const TetracodeTv = () => {
       </section>
 
       {/* Key Features */}
-      <section className="py-20">
+      <section className="py-20 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Platform Features</h2>
@@ -84,7 +83,7 @@ const TetracodeTv = () => {
       </section>
 
       {/* Statistics */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -111,13 +110,13 @@ const TetracodeTv = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Start Broadcasting Today
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Join thousands of content creators reaching audiences across Africa.
             </p>
-            <Button size="lg">
+            <Button size="lg" className="bg-white text-orange-900 hover:bg-white/90">
               Get Started <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
