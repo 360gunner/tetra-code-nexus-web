@@ -83,315 +83,15 @@
   .broadcasting-gradient {
     background: linear-gradient(135deg, hsl(var(--broadcasting)), hsl(var(--tech-gradient-2)));
   }
-  
-  /* Aviation Backgrounds */
-  .bg-aviation {
-    background: 
-      linear-gradient(rgba(70, 130, 180, 0.8), rgba(70, 130, 180, 0.8)),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M50 5L60 40L95 50L60 60L50 95L40 60L5 50L40 40Z'/%3E%3C/g%3E%3C/svg%3E");
-    position: relative;
-  }
 
-  .bg-aviation-enhanced {
-    background: 
-      linear-gradient(180deg, #1e3a8a 0%, #3b82f6 50%, #e0f2fe 100%),
-      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-    position: relative;
-    overflow: hidden;
-  }
+  /* Solutions Page Backgrounds - Corporate Level Design */
   
-  .bg-aviation-enhanced::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M50 20L65 50L100 55L70 75L75 110L50 95L25 110L30 75L0 55L35 50Z'/%3E%3Cpath d='M150 120L165 150L200 155L170 175L175 210L150 195L125 210L130 175L100 155L135 150Z'/%3E%3C/g%3E%3C/svg%3E"),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='100' viewBox='0 0 300 100'%3E%3Cpath d='M0 50 Q75 30 150 50 T300 50' stroke='%23ffffff' stroke-width='1' fill='none' opacity='0.15'/%3E%3Cpath d='M0 60 Q100 40 200 60 T400 60' stroke='%23ffffff' stroke-width='1' fill='none' opacity='0.1'/%3E%3C/svg%3E");
-    animation: aviationFloat 20s ease-in-out infinite;
-  }
-  
-  .bg-aviation-enhanced::after {
-    content: '';
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    width: 100px;
-    height: 100px;
-    background: 
-      radial-gradient(circle, transparent 40%, rgba(255, 255, 255, 0.1) 41%, rgba(255, 255, 255, 0.1) 45%, transparent 46%),
-      radial-gradient(circle, transparent 60%, rgba(255, 255, 255, 0.05) 61%, rgba(255, 255, 255, 0.05) 65%, transparent 66%);
-    border-radius: 50%;
-    animation: radarSpin 8s linear infinite;
-  }
-  
-  @keyframes aviationFloat {
-    0%, 100% { transform: translateX(0) translateY(0); }
-    25% { transform: translateX(-10px) translateY(-5px); }
-    50% { transform: translateX(5px) translateY(-10px); }
-    75% { transform: translateX(-5px) translateY(5px); }
-  }
-  
-  @keyframes radarSpin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  /* SaaS Backgrounds */
-  .bg-saas-enhanced {
-    background: 
-      linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%),
-      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .bg-saas-enhanced::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Crect x='20' y='20' width='30' height='20' rx='3'/%3E%3Crect x='60' y='30' width='25' height='15' rx='2'/%3E%3Crect x='100' y='25' width='20' height='18' rx='2'/%3E%3Ccircle cx='40' cy='80' r='8'/%3E%3Ccircle cx='80' cy='85' r='6'/%3E%3Ccircle cx='110' cy='75' r='5'/%3E%3Cpath d='M40 80L80 85M80 85L110 75' stroke='%23ffffff' stroke-width='1' opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
-    animation: saasFloat 15s ease-in-out infinite;
-  }
-  
-  .bg-saas-enhanced::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-      radial-gradient(circle at 20% 60%, rgba(59, 130, 246, 0.2) 0%, transparent 30%),
-      radial-gradient(circle at 80% 40%, rgba(96, 165, 250, 0.15) 0%, transparent 25%);
-    animation: saasFlow 12s ease-in-out infinite alternate;
-  }
-  
-  @keyframes saasFloat {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-  }
-  
-  @keyframes saasFlow {
-    0% { opacity: 0.8; }
-    100% { opacity: 1; }
-  }
-
-  /* Fintech Backgrounds */
-  .bg-fintech-enhanced {
-    background: 
-      linear-gradient(135deg, #1e3a8a 0%, #059669 50%, #10b981 100%),
-      radial-gradient(circle at 40% 60%, rgba(16, 185, 129, 0.2) 0%, transparent 50%);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .bg-fintech-enhanced::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Ctext x='30' y='50' font-size='24' font-family='Arial'%3E%24%3C/text%3E%3Ctext x='120' y='80' font-size='20' font-family='Arial'%3E€%3C/text%3E%3Ctext x='60' y='130' font-size='18' font-family='Arial'%3E₿%3C/text%3E%3Ctext x='150' y='160' font-size='16' font-family='Arial'%3E₦%3C/text%3E%3Cpath d='M20 100L180 100M100 20L100 180' stroke='%23ffffff' stroke-width='0.5' opacity='0.15'/%3E%3C/g%3E%3C/svg%3E");
-    animation: fintechPulse 8s ease-in-out infinite;
-  }
-  
-  .bg-fintech-enhanced::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='100' viewBox='0 0 300 100'%3E%3Cpath d='M0 80L50 60L100 70L150 40L200 50L250 30L300 45' stroke='%23ffffff' stroke-width='2' fill='none' opacity='0.2'/%3E%3Cpath d='M0 90L50 75L100 85L150 60L200 70L250 55L300 65' stroke='%23ffffff' stroke-width='1' fill='none' opacity='0.15'/%3E%3C/svg%3E");
-    background-size: cover;
-  }
-  
-  @keyframes fintechPulse {
-    0%, 100% { opacity: 0.8; }
-    50% { opacity: 1; }
-  }
-
-  /* Cloud Backgrounds */
-  .bg-cloud-enhanced {
-    background: 
-      linear-gradient(135deg, #f0f9ff 0%, #bae6fd 50%, #0ea5e9 100%),
-      radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.4) 0%, transparent 50%);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .bg-cloud-enhanced::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M50 80c-8 0-15-7-15-15s7-15 15-15c3-11 13-19 24-19s21 8 24 19c8 0 15 7 15 15s-7 15-15 15H50z'/%3E%3Cpath d='M200 120c-6 0-11-5-11-11s5-11 11-11c2-8 9-14 18-14s16 6 18 14c6 0 11 5 11 11s-5 11-11 11H200z'/%3E%3Cpath d='M150 160c-5 0-9-4-9-9s4-9 9-9c2-6 7-11 14-11s12 5 14 11c5 0 9 4 9 9s-4 9-9 9H150z'/%3E%3C/g%3E%3C/svg%3E");
-    animation: cloudDrift 25s linear infinite;
-  }
-  
-  .bg-cloud-enhanced::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='50' y='50' width='20' height='30' rx='2'/%3E%3Crect x='80' y='60' width='15' height='25' rx='2'/%3E%3Crect x='110' y='55' width='18' height='28' rx='2'/%3E%3Cpath d='M60 50L90 60M90 60L120 55M60 80L90 85M90 85L120 83' stroke='%23ffffff' stroke-width='1' opacity='0.15'/%3E%3C/g%3E%3C/svg%3E");
-  }
-  
-  @keyframes cloudDrift {
-    0% { transform: translateX(-100px); }
-    100% { transform: translateX(100px); }
-  }
-
-  /* Gaming Backgrounds */
-  .bg-gaming-enhanced {
-    background: 
-      linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%),
-      radial-gradient(circle at 20% 80%, #e91e63 0%, transparent 40%),
-      radial-gradient(circle at 80% 20%, #8e44ad 0%, transparent 40%);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .bg-gaming-enhanced::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cg fill='%23ff006e' fill-opacity='0.2'%3E%3Crect x='20' y='20' width='10' height='10'/%3E%3Crect x='40' y='40' width='8' height='8'/%3E%3Crect x='80' y='30' width='12' height='12'/%3E%3Crect x='110' y='60' width='6' height='6'/%3E%3C/g%3E%3Cg fill='%238e44ad' fill-opacity='0.15'%3E%3Ccircle cx='60' cy='80' r='4'/%3E%3Ccircle cx='100' cy='100' r='6'/%3E%3Ccircle cx='130' cy='90' r='3'/%3E%3C/g%3E%3C/svg%3E");
-    animation: gamingGlow 4s ease-in-out infinite alternate;
-  }
-  
-  .bg-gaming-enhanced::after {
-    content: '';
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    right: 10%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #00f5ff 50%, transparent 100%);
-    animation: gamingGrid 3s ease-in-out infinite;
-  }
-  
-  @keyframes gamingGlow {
-    0% { opacity: 0.6; }
-    100% { opacity: 1; }
-  }
-  
-  @keyframes gamingGrid {
-    0%, 100% { transform: scaleX(0.5); opacity: 0.5; }
-    50% { transform: scaleX(1); opacity: 1; }
-  }
-
-  /* AI Backgrounds */
-  .bg-ai-enhanced {
-    background: 
-      linear-gradient(135deg, #0c0a1e 0%, #1e1b4b 50%, #3730a3 100%),
-      radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .bg-ai-enhanced::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%2300f5ff' stroke-width='1' fill='none' opacity='0.3'%3E%3Ccircle cx='50' cy='50' r='3'/%3E%3Ccircle cx='100' cy='80' r='2'/%3E%3Ccircle cx='150' cy='60' r='4'/%3E%3Ccircle cx='80' cy='120' r='2'/%3E%3Ccircle cx='130' cy='140' r='3'/%3E%3Cpath d='M50 50L100 80M100 80L150 60M100 80L80 120M80 120L130 140M150 60L130 140'/%3E%3C/g%3E%3C/svg%3E");
-    animation: aiNeural 6s ease-in-out infinite;
-  }
-  
-  .bg-ai-enhanced::after {
-    content: '';
-    position: absolute;
-    top: 20%;
-    right: 20%;
-    width: 60px;
-    height: 60px;
-    background: 
-      radial-gradient(circle, rgba(0, 245, 255, 0.4) 0%, transparent 70%);
-    border-radius: 50%;
-    animation: aiOrb 8s ease-in-out infinite;
-  }
-  
-  @keyframes aiNeural {
-    0%, 100% { opacity: 0.7; }
-    50% { opacity: 1; }
-  }
-  
-  @keyframes aiOrb {
-    0%, 100% { transform: scale(1) translateY(0); }
-    50% { transform: scale(1.2) translateY(-10px); }
-  }
-
-  /* Mobile Backgrounds */
-  .bg-mobile-enhanced {
-    background: 
-      linear-gradient(135deg, #667eea 0%, #764ba2 100%),
-      radial-gradient(circle at 30% 70%, rgba(102, 126, 234, 0.4) 0%, transparent 50%);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .bg-mobile-enhanced::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='200' viewBox='0 0 150 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='40' y='20' width='25' height='40' rx='5'/%3E%3Crect x='80' y='40' width='20' height='30' rx='4'/%3E%3Crect x='60' y='80' width='30' height='50' rx='6'/%3E%3Ccircle cx='30' cy='120' r='8'/%3E%3Ccircle cx='110' cy='100' r='6'/%3E%3Ccircle cx='90' cy='150' r='4'/%3E%3C/g%3E%3C/svg%3E");
-    animation: mobileFloat 10s ease-in-out infinite;
-  }
-  
-  .bg-mobile-enhanced::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Crect x='10' y='10' width='15' height='15' rx='3'/%3E%3Crect x='35' y='35' width='12' height='12' rx='2'/%3E%3Crect x='60' y='15' width='10' height='10' rx='2'/%3E%3Crect x='15' y='60' width='18' height='18' rx='4'/%3E%3Crect x='60' y='60' width='8' height='8' rx='1'/%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.8;
-  }
-  
-  @keyframes mobileFloat {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    25% { transform: translateY(-8px) rotate(1deg); }
-    75% { transform: translateY(8px) rotate(-1deg); }
-  }
-
-  /* Solutions Page Backgrounds */
-  
-  /* For Individuals - Personal productivity and digital lifestyle */
+  /* For Individuals - Personal Cloud & Digital Lifestyle */
   .bg-solutions-individuals {
     background: 
-      linear-gradient(135deg, #667eea 0%, #14b8a6 100%),
-      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+      linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f8fafc 100%),
+      radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(20, 184, 166, 0.06) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
   }
@@ -404,32 +104,38 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='40' y='40' width='20' height='35' rx='10'/%3E%3Ccircle cx='100' cy='60' r='12'/%3E%3Crect x='130' y='45' width='25' height='15' rx='3'/%3E%3Ccircle cx='70' cy='120' r='8'/%3E%3Crect x='120' y='110' width='30' height='20' rx='4'/%3E%3Cpath d='M50 40C30 60 30 80 50 100C70 80 70 60 50 40Z' opacity='0.08'/%3E%3C/g%3E%3C/svg%3E");
-    animation: individualFloat 12s ease-in-out infinite;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%233b82f6' fill-opacity='0.04'%3E%3Crect x='40' y='40' width='30' height='50' rx='8'/%3E%3Crect x='130' y='50' width='25' height='40' rx='6'/%3E%3Ccircle cx='80' cy='120' r='12'/%3E%3Crect x='110' y='110' width='40' height='25' rx='4'/%3E%3Cpath d='M60 60C50 70 50 90 60 100C70 90 70 70 60 60Z'/%3E%3C/g%3E%3C/svg%3E");
+    animation: individualFloat 20s ease-in-out infinite;
   }
   
   .bg-solutions-individuals::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 20%;
+    right: 15%;
+    width: 80px;
+    height: 80px;
     background: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='150' viewBox='0 0 300 150'%3E%3Cg stroke='%23ffffff' stroke-width='1' fill='none' opacity='0.1'%3E%3Cpath d='M50 50L100 70L150 60L200 80L250 70' stroke-dasharray='3,3'/%3E%3Cpath d='M80 90L130 110L180 100L230 120' stroke-dasharray='2,4'/%3E%3C/g%3E%3C/svg%3E");
+      radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: rippleEffect 8s ease-in-out infinite;
   }
   
   @keyframes individualFloat {
-    0%, 100% { transform: translateY(0) translateX(0); }
-    33% { transform: translateY(-5px) translateX(5px); }
-    66% { transform: translateY(5px) translateX(-5px); }
+    0%, 100% { transform: translateY(0) translateX(0); opacity: 1; }
+    50% { transform: translateY(-8px) translateX(5px); opacity: 0.8; }
+  }
+  
+  @keyframes rippleEffect {
+    0%, 100% { transform: scale(1); opacity: 0.1; }
+    50% { transform: scale(1.2); opacity: 0.05; }
   }
 
-  /* For Businesses - Modern enterprise infrastructure */
+  /* For Businesses - Enterprise Infrastructure */
   .bg-solutions-businesses {
     background: 
-      linear-gradient(135deg, #475569 0%, #1e40af 50%, #3b82f6 100%),
-      radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
+      linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%),
+      radial-gradient(circle at 60% 40%, rgba(71, 85, 105, 0.1) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
   }
@@ -442,8 +148,9 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='200' viewBox='0 0 250 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Crect x='40' y='40' width='25' height='40' rx='2'/%3E%3Crect x='80' y='30' width='30' height='50' rx='3'/%3E%3Crect x='130' y='35' width='20' height='45' rx='2'/%3E%3Crect x='170' y='25' width='35' height='55' rx='3'/%3E%3Crect x='50' y='120' width='40' height='30' rx='4'/%3E%3Crect x='110' y='115' width='50' height='35' rx='5'/%3E%3Ccircle cx='180' cy='130' r='15'/%3E%3C/g%3E%3C/svg%3E");
-    animation: businessGrid 18s ease-in-out infinite;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Cg fill='%23475569' fill-opacity='0.06'%3E%3Crect x='50' y='40' width='25' height='60' rx='2'/%3E%3Crect x='90' y='30' width='30' height='70' rx='3'/%3E%3Crect x='140' y='35' width='20' height='65' rx='2'/%3E%3Crect x='180' y='25' width='35' height='75' rx='3'/%3E%3Crect x='60' y='120' width='180' height='40' rx='4' stroke='%23475569' stroke-width='1' fill='none'/%3E%3C/g%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 400 200'%3E%3Cg stroke='%23475569' stroke-width='1' fill='none' opacity='0.08'%3E%3Cpath d='M0 100L100 80L200 100L300 90L400 100'/%3E%3Cpath d='M0 120L80 110L160 120L240 115L320 120L400 125'/%3E%3Cpath d='M50 50L150 70L250 60L350 65'/%3E%3C/g%3E%3C/svg%3E");
+    animation: businessFlow 25s linear infinite;
   }
   
   .bg-solutions-businesses::after {
@@ -453,20 +160,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Cg stroke='%23ffffff' stroke-width='1' fill='none' opacity='0.1'%3E%3Cpath d='M0 50L50 60L100 40L150 55L200 35L250 50L300 40'/%3E%3Cpath d='M0 80L60 90L120 70L180 85L240 75L300 80'/%3E%3Cpath d='M0 120L80 130L160 110L240 125L300 115'/%3E%3C/g%3E%3C/svg%3E");
+    background: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%23475569' stroke-width='1' fill='none' opacity='0.05'%3E%3Crect x='40' y='40' width='120' height='80' rx='8' stroke-dasharray='4,4'/%3E%3Cpath d='M80 80L120 80M80 100L120 100M80 120L120 120'/%3E%3Ccircle cx='100' cy='140' r='20' stroke-dasharray='2,3'/%3E%3C/g%3E%3C/svg%3E");
   }
   
-  @keyframes businessGrid {
-    0%, 100% { opacity: 0.8; }
-    50% { opacity: 1; }
+  @keyframes businessFlow {
+    0% { transform: translateX(-50px); }
+    100% { transform: translateX(50px); }
   }
 
-  /* For Governments - Digital governance */
+  /* For Governments - Digital Governance */
   .bg-solutions-governments {
     background: 
-      linear-gradient(135deg, #1e3a8a 0%, #d97706 50%, #fbbf24 100%),
-      radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+      linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%),
+      radial-gradient(circle at 40% 60%, rgba(251, 191, 36, 0.1) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
   }
@@ -479,8 +186,8 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='70' y='30' width='60' height='50' rx='5'/%3E%3Crect x='75' y='35' width='10' height='40'/%3E%3Crect x='90' y='35' width='10' height='40'/%3E%3Crect x='105' y='35' width='10' height='40'/%3E%3Crect x='120' y='35' width='10' height='40'/%3E%3Crect x='60' y='80' width='80' height='15' rx='3'/%3E%3Ccircle cx='100' cy='130' r='20' stroke='%23ffffff' stroke-width='2' fill='none'/%3E%3Cpath d='M85 130L95 140L115 120' stroke='%23ffffff' stroke-width='2' fill='none'/%3E%3C/g%3E%3C/svg%3E");
-    animation: governmentPulse 10s ease-in-out infinite;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23fbbf24' fill-opacity='0.08'%3E%3Crect x='70' y='40' width='60' height='50' rx='4'/%3E%3Crect x='75' y='45' width='8' height='40'/%3E%3Crect x='88' y='45' width='8' height='40'/%3E%3Crect x='101' y='45' width='8' height='40'/%3E%3Crect x='114' y='45' width='8' height='40'/%3E%3Crect x='60' y='90' width='80' height='12' rx='3'/%3E%3Ccircle cx='100' cy='130' r='25' stroke='%23fbbf24' stroke-width='2' fill='none' opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+    animation: governmentStatic 15s ease-in-out infinite;
   }
   
   .bg-solutions-governments::after {
@@ -491,19 +198,19 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Cg stroke='%23ffffff' stroke-width='1' fill='none' opacity='0.08'%3E%3Cpath d='M150 100L100 80L50 100L100 120Z' stroke-dasharray='4,2'/%3E%3Cpath d='M150 100L200 80L250 100L200 120Z' stroke-dasharray='4,2'/%3E%3Ccircle cx='150' cy='100' r='30' stroke-dasharray='6,3'/%3E%3C/g%3E%3C/svg%3E");
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Cg stroke='%23fbbf24' stroke-width='1' fill='none' opacity='0.06'%3E%3Cpath d='M50 100L100 80L150 100L200 90L250 100' stroke-dasharray='6,4'/%3E%3Crect x='120' y='60' width='60' height='80' rx='8' stroke-dasharray='4,6'/%3E%3Ccircle cx='150' cy='100' r='40' stroke-dasharray='8,4'/%3E%3C/g%3E%3C/svg%3E");
   }
   
-  @keyframes governmentPulse {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.02); opacity: 1; }
+  @keyframes governmentStatic {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
   }
 
-  /* For Developers - Engineering and tech */
+  /* For Developers - Engineering Platform */
   .bg-solutions-developers {
     background: 
-      linear-gradient(135deg, #1e1b4b 0%, #4c1d95 50%, #7c3aed 100%),
-      radial-gradient(circle at 20% 80%, rgba(124, 58, 237, 0.3) 0%, transparent 50%);
+      linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%),
+      radial-gradient(circle at 20% 80%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
   }
@@ -516,8 +223,8 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='200' viewBox='0 0 250 200'%3E%3Cg fill='%2300f5ff' fill-opacity='0.1'%3E%3Ctext x='30' y='40' font-size='14' font-family='monospace'%3E&lt;/&gt;%3C/text%3E%3Ctext x='150' y='60' font-size='12' font-family='monospace'%3E{}%3C/text%3E%3Ctext x='60' y='100' font-size='10' font-family='monospace'%3Eapi%3C/text%3E%3Ctext x='180' y='120' font-size='14' font-family='monospace'%3E[]%3C/text%3E%3Ctext x='100' y='160' font-size='12' font-family='monospace'%3E()%3C/text%3E%3C/g%3E%3C/svg%3E");
-    animation: codeTyping 8s ease-in-out infinite;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Cg fill='%2300f5ff' fill-opacity='0.1'%3E%3Ctext x='40' y='40' font-size='12' font-family='monospace'%3E&lt;api/&gt;%3C/text%3E%3Ctext x='180' y='60' font-size='10' font-family='monospace'%3E{data}%3C/text%3E%3Ctext x='80' y='100' font-size='11' font-family='monospace'%3Eml.predict()%3C/text%3E%3Ctext x='200' y='120' font-size='12' font-family='monospace'%3E[SDK]%3C/text%3E%3Ctext x='120' y='160' font-size='10' font-family='monospace'%3E// docs%3C/text%3E%3C/g%3E%3C/svg%3E");
+    animation: codeFlow 12s ease-in-out infinite;
   }
   
   .bg-solutions-developers::after {
@@ -528,19 +235,20 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%2300f5ff' stroke-width='1' fill='none' opacity='0.2'%3E%3Cpath d='M20 20L180 20L180 180L20 180Z' stroke-dasharray='5,5'/%3E%3Cpath d='M40 40L160 40L160 160L40 160Z' stroke-dasharray='3,3'/%3E%3Ccircle cx='100' cy='100' r='30' stroke-dasharray='2,4'/%3E%3C/g%3E%3C/svg%3E");
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg stroke='%237c3aed' stroke-width='1' fill='none' opacity='0.15'%3E%3Crect x='30' y='30' width='140' height='100' rx='8' stroke-dasharray='4,4'/%3E%3Cpath d='M50 60L150 60M50 80L150 80M50 100L120 100'/%3E%3Ccircle cx='160' cy='50' r='3' fill='%237c3aed'/%3E%3C/g%3E%3C/svg%3E");
   }
   
-  @keyframes codeTyping {
-    0%, 100% { opacity: 0.6; }
+  @keyframes codeFlow {
+    0%, 100% { opacity: 0.8; }
     50% { opacity: 1; }
   }
 
-  /* For Startups - Acceleration and growth */
+  /* For Startups - Innovation & Growth */
   .bg-solutions-startups {
     background: 
-      linear-gradient(135deg, #3b82f6 0%, #ec4899 100%),
-      radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 40%);
+      linear-gradient(135deg, #dbeafe 0%, #e0e7ff 50%, #fce7f3 100%),
+      radial-gradient(circle at 70% 30%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 30% 70%, rgba(236, 72, 153, 0.08) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
   }
@@ -553,33 +261,33 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.12'%3E%3Cpath d='M100 30L110 80L100 130L90 80Z'/%3E%3Ccircle cx='50' cy='100' r='8'/%3E%3Ccircle cx='70' cy='80' r='5'/%3E%3Ccircle cx='130' cy='80' r='5'/%3E%3Ccircle cx='150' cy='100' r='8'/%3E%3Cpath d='M30 150L50 140L70 150L90 140L110 150L130 140L150 150L170 140' stroke='%23ffffff' stroke-width='2' fill='none'/%3E%3C/g%3E%3C/svg%3E");
-    animation: startupGrowth 15s ease-in-out infinite;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%233b82f6' fill-opacity='0.08'%3E%3Cpath d='M100 30L110 80L100 130L90 80Z'/%3E%3Crect x='40' y='80' width='30' height='20' rx='4'/%3E%3Crect x='130' y='85' width='25' height='15' rx='3'/%3E%3Ccircle cx='70' cy='130' r='8'/%3E%3Ccircle cx='130' cy='125' r='6'/%3E%3Cpath d='M50 160L70 150L90 160L110 150L130 160L150 150' stroke='%233b82f6' stroke-width='2' fill='none'/%3E%3C/g%3E%3C/svg%3E");
+    animation: startupGrowth 18s ease-in-out infinite;
   }
   
   .bg-solutions-startups::after {
     content: '';
     position: absolute;
     bottom: 20%;
-    left: 20%;
-    right: 20%;
+    left: 0;
+    right: 0;
     height: 40%;
     background: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='100' viewBox='0 0 300 100'%3E%3Cpath d='M0 80L60 70L120 50L180 30L240 20L300 10' stroke='%23ffffff' stroke-width='3' fill='none' opacity='0.2'/%3E%3Cpath d='M0 90L60 85L120 70L180 55L240 45L300 35' stroke='%23ffffff' stroke-width='2' fill='none' opacity='0.15'/%3E%3C/svg%3E");
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='100' viewBox='0 0 400 100'%3E%3Cpath d='M0 80L80 70L160 50L240 30L320 20L400 10' stroke='%23ec4899' stroke-width='2' fill='none' opacity='0.15'/%3E%3Cpath d='M0 90L80 85L160 70L240 55L320 45L400 35' stroke='%233b82f6' stroke-width='2' fill='none' opacity='0.12'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
   }
   
   @keyframes startupGrowth {
     0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-10px) scale(1.05); }
+    50% { transform: translateY(-10px) scale(1.02); }
   }
 
-  /* For Education - Learning and academic */
+  /* For Education - Academic & Learning */
   .bg-solutions-education {
     background: 
-      linear-gradient(135deg, #f97316 0%, #3b82f6 100%),
-      radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+      linear-gradient(135deg, #fef7ed 0%, #fed7aa 30%, #dbeafe 70%, #1e40af 100%),
+      radial-gradient(circle at 30% 70%, rgba(249, 115, 22, 0.1) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
   }
@@ -592,8 +300,8 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Crect x='50' y='40' width='30' height='40' rx='3'/%3E%3Crect x='90' y='50' width='25' height='30' rx='2'/%3E%3Ccircle cx='130' cy='65' r='15'/%3E%3Cpath d='M130 55L125 65L130 75L135 65Z'/%3E%3Crect x='40' y='120' width='50' height='35' rx='5' stroke='%23ffffff' stroke-width='2' fill='none'/%3E%3Crect x='110' y='115' width='60' height='40' rx='6' stroke='%23ffffff' stroke-width='2' fill='none'/%3E%3Ctext x='60' y='140' font-size='8' fill='%23ffffff' opacity='0.3'%3EA=%3C/text%3E%3Ctext x='130' y='140' font-size='8' fill='%23ffffff' opacity='0.3'%3E{}%3C/text%3E%3C/g%3E%3C/svg%3E");
-    animation: educationFloat 14s ease-in-out infinite;
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23f97316' fill-opacity='0.08'%3E%3Crect x='50' y='50' width='30' height='40' rx='4'/%3E%3Crect x='90' y='60' width='25' height='30' rx='3'/%3E%3Ccircle cx='130' cy='75' r='15'/%3E%3Crect x='40' y='120' width='50' height='35' rx='6' stroke='%23f97316' stroke-width='1' fill='none'/%3E%3Crect x='110' y='115' width='60' height='40' rx='8' stroke='%231e40af' stroke-width='1' fill='none'/%3E%3Ctext x='60' y='140' font-size='8' fill='%23f97316' opacity='0.4'%3EA+%3C/text%3E%3Ctext x='130' y='140' font-size='8' fill='%231e40af' opacity='0.4'%3E{)%3C/text%3E%3C/g%3E%3C/svg%3E");
+    animation: educationFloat 16s ease-in-out infinite;
   }
   
   .bg-solutions-education::after {
@@ -604,66 +312,44 @@
     right: 0;
     bottom: 0;
     background-image: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Cg stroke='%23ffffff' stroke-width='2' fill='none' opacity='0.1'%3E%3Cpath d='M50 150Q100 130 150 150T250 150' stroke-dasharray='4,6'/%3E%3Cpath d='M30 120Q80 100 130 120T230 120' stroke-dasharray='3,5'/%3E%3C/g%3E%3C/svg%3E");
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Cg stroke='%23f97316' stroke-width='1' fill='none' opacity='0.1'%3E%3Cpath d='M50 150Q100 130 150 150T250 150' stroke-dasharray='3,5'/%3E%3Cpath d='M30 120Q80 100 130 120T230 120' stroke-dasharray='2,4'/%3E%3Crect x='100' y='60' width='100' height='60' rx='8' stroke-dasharray='4,6'/%3E%3C/g%3E%3C/svg%3E");
   }
   
   @keyframes educationFloat {
     0%, 100% { transform: translateX(0) translateY(0); }
-    25% { transform: translateX(5px) translateY(-5px); }
-    75% { transform: translateX(-5px) translateY(5px); }
+    33% { transform: translateX(3px) translateY(-3px); }
+    66% { transform: translateX(-3px) translateY(3px); }
   }
 
   /* Dark mode adjustments for Solutions pages */
   .dark .bg-solutions-individuals {
     background: 
-      linear-gradient(135deg, #4338ca 0%, #0f766e 100%),
-      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+      linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%),
+      radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
   }
 
   .dark .bg-solutions-businesses {
     background: 
-      linear-gradient(135deg, #334155 0%, #1e3a8a 50%, #2563eb 100%),
-      radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
-  }
-
-  .dark .bg-solutions-governments {
-    background: 
-      linear-gradient(135deg, #1e3a8a 0%, #b45309 50%, #d97706 100%),
-      radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-  }
-
-  .dark .bg-solutions-developers {
-    background: 
-      linear-gradient(135deg, #0f0f23 0%, #2d1b69 50%, #4c1d95 100%),
-      radial-gradient(circle at 20% 80%, rgba(79, 70, 229, 0.2) 0%, transparent 50%);
+      linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #374151 100%),
+      radial-gradient(circle at 60% 40%, rgba(156, 163, 175, 0.1) 0%, transparent 50%);
   }
 
   .dark .bg-solutions-startups {
     background: 
-      linear-gradient(135deg, #1e40af 0%, #be185d 100%),
-      radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 40%);
+      linear-gradient(135deg, #1e1b4b 0%, #3730a3 50%, #be185d 100%),
+      radial-gradient(circle at 70% 30%, rgba(79, 70, 229, 0.15) 0%, transparent 50%);
   }
 
   .dark .bg-solutions-education {
     background: 
-      linear-gradient(135deg, #c2410c 0%, #1e40af 100%),
-      radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+      linear-gradient(135deg, #0c0a09 0%, #c2410c 30%, #1e40af 70%, #1e293b 100%),
+      radial-gradient(circle at 30% 70%, rgba(194, 65, 12, 0.1) 0%, transparent 50%);
   }
 
   /* Accessibility - Respect reduced motion preferences */
   @media (prefers-reduced-motion: reduce) {
-    .bg-aviation-enhanced::before,
-    .bg-aviation-enhanced::after,
-    .bg-saas-enhanced::before,
-    .bg-saas-enhanced::after,
-    .bg-fintech-enhanced::before,
-    .bg-cloud-enhanced::before,
-    .bg-gaming-enhanced::before,
-    .bg-gaming-enhanced::after,
-    .bg-ai-enhanced::before,
-    .bg-ai-enhanced::after,
-    .bg-mobile-enhanced::before,
     .bg-solutions-individuals::before,
+    .bg-solutions-individuals::after,
     .bg-solutions-businesses::before,
     .bg-solutions-governments::before,
     .bg-solutions-developers::before,
@@ -671,49 +357,5 @@
     .bg-solutions-education::before {
       animation: none;
     }
-  }
-
-  /* Dark mode adjustments */
-  .dark .bg-aviation-enhanced {
-    background: 
-      linear-gradient(180deg, #0c1e36 0%, #1e3a8a 70%, #2563eb 100%),
-      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-  }
-
-  .dark .bg-saas-enhanced {
-    background: 
-      linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%),
-      radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
-  }
-
-  .dark .bg-fintech-enhanced {
-    background: 
-      linear-gradient(135deg, #0c1e36 0%, #0f766e 50%, #059669 100%),
-      radial-gradient(circle at 40% 60%, rgba(10, 250, 180, 0.1) 0%, transparent 50%);
-  }
-
-  .dark .bg-cloud-enhanced {
-    background: 
-      linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0ea5e9 100%),
-      radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-  }
-
-  .dark .bg-gaming-enhanced {
-    background: 
-      linear-gradient(135deg, #0a0a16 0%, #0d1025 50%, #0f2d5c 100%),
-      radial-gradient(circle at 20% 80%, #9d174d 0%, transparent 40%),
-      radial-gradient(circle at 80% 20%, #5b21b6 0%, transparent 40%);
-  }
-
-  .dark .bg-ai-enhanced {
-    background: 
-      linear-gradient(135deg, #080613 0%, #131035 50%, #1e1b4b 100%),
-      radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.2) 0%, transparent 70%);
-  }
-
-  .dark .bg-mobile-enhanced {
-    background: 
-      linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%),
-      radial-gradient(circle at 30% 70%, rgba(79, 70, 229, 0.3) 0%, transparent 50%);
   }
 }
