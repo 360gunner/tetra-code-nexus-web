@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -48,8 +47,8 @@ import CdnServices from "./pages/products/cloud/CdnServices";
 
 // Gaming pages
 import CloudGaming from "./pages/products/gaming/CloudGaming";
-import MobileGaming from "./pages/products/gaming/MobileGaming";
-import DeveloperTools from "./pages/products/gaming/DeveloperTools";
+import MobileGaming from "./pages/gaming/MobileGaming";
+import DeveloperTools from "./pages/gaming/DeveloperTools";
 
 // AI pages
 import TetracodeAi from "./pages/products/ai/TetracodeAi";
@@ -100,6 +99,10 @@ import ContactSupport from "./pages/support/ContactSupport";
 import SystemStatus from "./pages/support/SystemStatus";
 import LiveChat from "./pages/support/LiveChat";
 
+// Add these imports
+import AboutUs from "./pages/about/AboutUs";
+import Contact from "./pages/contact/Contact";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -118,6 +121,10 @@ const App = () => (
               <Route path="/mission" element={<Mission />} />
               <Route path="/leadership" element={<Leadership />} />
               <Route path="/news" element={<News />} />
+              
+              {/* New routes */}
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/contact" element={<Contact />} />
               
               {/* Broadcasting & Media routes */}
               <Route path="/products/broadcasting/tetracode-tv" element={<TetracodeTv />} />
