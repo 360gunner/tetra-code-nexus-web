@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -45,10 +46,10 @@ import WebHosting from "./pages/products/cloud/WebHosting";
 import CloudStorage from "./pages/products/cloud/CloudStorage";
 import CdnServices from "./pages/products/cloud/CdnServices";
 
-// Gaming pages
+// Gaming pages - Fixed import paths
 import CloudGaming from "./pages/products/gaming/CloudGaming";
-import MobileGaming from "./pages/gaming/MobileGaming";
-import DeveloperTools from "./pages/gaming/DeveloperTools";
+import MobileGaming from "./pages/products/gaming/MobileGaming";
+import DeveloperTools from "./pages/products/gaming/DeveloperTools";
 
 // AI pages
 import TetracodeAi from "./pages/products/ai/TetracodeAi";
