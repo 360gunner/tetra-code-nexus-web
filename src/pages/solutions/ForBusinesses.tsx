@@ -13,8 +13,8 @@ const ForBusinesses = () => {
             <Badge className="mb-4 bg-slate-600/20 text-slate-800 border-slate-300" variant="secondary">
               Enterprise Solutions
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">Solutions for Businesses</h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Solutions for Businesses</h1>
+            <p className="text-xl text-gray-200 mb-8">
               Enterprise-grade infrastructure and productivity solutions for African businesses.
             </p>
             <Button size="lg" className="bg-slate-700 hover:bg-slate-800">

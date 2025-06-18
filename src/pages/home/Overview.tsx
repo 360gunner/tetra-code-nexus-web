@@ -17,7 +17,7 @@ const Overview = () => {
             <p className="text-xl text-white/90 mb-8">
               2mp Services stands at the forefront of technological advancement in Africa, delivering comprehensive solutions that empower communities, businesses, and governments to thrive in the digital age.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-white text-purple-900 hover:bg-white/90">
                 <Link to="/about/our-story">
                   Our Story <ArrowRight className="ml-2 h-5 w-5" />
@@ -26,12 +26,13 @@ const Overview = () => {
               <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-purple-900">
                 <Link to="/contact/request-demo">Request Demo</Link>
               </Button>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
 
       {/* Key Metrics */}
+      {/*
       <section className="py-16 border-t border-white/20 bg-white/10 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -66,7 +67,7 @@ const Overview = () => {
           </div>
         </div>
       </section>
-
+*/}
       {/* Company Pillars */}
       <section className="py-20 bg-background/95 backdrop-blur-sm">
         <div className="container mx-auto px-4">
@@ -127,11 +128,11 @@ const Overview = () => {
             <p className="text-xl text-white/90 mb-8">
               Our leadership team brings decades of combined experience in technology, business, and African markets.
             </p>
-            <Button asChild size="lg" className="bg-white text-purple-900 hover:bg-white/90">
+            {/* <Button asChild size="lg" className="bg-white text-purple-900 hover:bg-white/90">
               <Link to="/leadership">
                 Meet Our Team <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-            </Button>
+            </Button>*/}
           </div>
         </div>
       </section>

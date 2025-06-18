@@ -13,8 +13,8 @@ const ForIndividuals = () => {
             <Badge className="mb-4 bg-blue-600/20 text-blue-800 border-blue-300" variant="secondary">
               Personal Technology Solutions
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">Solutions for Individuals</h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Solutions for Individuals</h1>
+            <p className="text-xl text-gray-200 mb-8">
               Personal technology solutions for everyday life, productivity, and digital convenience.
             </p>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">

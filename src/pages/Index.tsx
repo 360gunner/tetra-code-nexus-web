@@ -65,8 +65,8 @@ const Index = () => {
   ];
 
   const stats = [
-    { value: "50M+", label: "Active Users", icon: Users },
-    { value: "100+", label: "Countries", icon: Globe },
+    /*{ value: "50M+", label: "Active Users", icon: Users },
+    { value: "100+", label: "Countries", icon: Globe },*/
     { value: "99.9%", label: "Uptime", icon: Zap },
     { value: "24/7", label: "Support", icon: Shield }
   ];
@@ -102,7 +102,7 @@ const Index = () => {
       {/* Stats Section */}
       <section className="py-16 border-t">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-2 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="flex justify-center mb-4">

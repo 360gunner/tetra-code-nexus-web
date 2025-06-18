@@ -13,10 +13,10 @@ const AppStore = () => {
             <Badge className="mb-4 bg-white/20 text-white border-white/20" variant="secondary">Mobile & Super Apps</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">TETRACODE App Store</h1>
             <p className="text-xl text-white/90 mb-8">Alternative app store for African mobile applications.</p>
-            <Button size="lg" className="bg-white text-indigo-700 hover:bg-white/90">
+            {/*<Button size="lg" className="bg-white text-indigo-700 hover:bg-white/90">
               <Smartphone className="mr-2 h-5 w-5" />
               Browse Apps
-            </Button>
+            </Button>*/}
           </div>
         </div>
       </section>

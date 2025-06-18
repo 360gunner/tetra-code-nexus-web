@@ -15,10 +15,10 @@ const Mobix = () => {
             <p className="text-xl text-white/90 mb-8">
               All-in-one financial services platform combining payments, banking, investments, and more.
             </p>
-            <Button size="lg" className="bg-white text-emerald-700 hover:bg-white/90">
+            {/*<Button size="lg" className="bg-white text-emerald-700 hover:bg-white/90">
               <Smartphone className="mr-2 h-5 w-5" />
               Download App
-            </Button>
+            </Button>*/}
           </div>
         </div>
       </section>

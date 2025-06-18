@@ -13,8 +13,8 @@ const ForStartups = () => {
             <Badge className="mb-4 bg-blue-500/20 text-blue-800 border-blue-300" variant="secondary">
               Startup Acceleration Platform
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">Solutions for Startups</h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Solutions for Startups</h1>
+            <p className="text-xl text-gray-200 mb-8">
               Startup-friendly tools and platforms designed to accelerate growth and innovation.
             </p>
             <Button size="lg" className="bg-gradient-to-r from-blue-600 to-pink-600 hover:from-blue-700 hover:to-pink-700 text-white">

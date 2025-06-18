@@ -13,8 +13,8 @@ const ForEducation = () => {
             <Badge className="mb-4 bg-orange-500/20 text-orange-800 border-orange-300" variant="secondary">
               Educational Technology
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">Solutions for Education</h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Solutions for Education</h1>
+            <p className="text-xl text-gray-200 mb-8">
               Educational technology solutions for schools, universities, and learning institutions.
             </p>
             <Button size="lg" className="bg-gradient-to-r from-orange-600 to-blue-600 hover:from-orange-700 hover:to-blue-700 text-white">

@@ -9,22 +9,22 @@ const AboutUs = () => {
     {
       name: "Bilel Moussaoui",
       title: "Chairman of the Board",
-      description: "Visionary leader driving strategic direction and innovation across all business units."
+      description: "Visionary leader steering the company's strategic direction and fostering innovation across all business units."
     },
     {
       name: "Zakaria Deriche",
       title: "Software Architect",
-      description: "Technical excellence and architectural leadership for our cutting-edge solutions."
+      description: "The technological mastermind behind our core solutions, driving architectural excellence and setting technical direction."
     },
     {
       name: "Rachid Dahmane",
       title: "Business Development Manager",
-      description: "Expanding partnerships and driving growth across African markets."
+      description: "Championing strategic partnerships and accelerating growth opportunities across African markets."
     },
     {
       name: "Hossem Eddine Kentache",
       title: "Chief Technology Officer",
-      description: "Leading technological innovation and digital transformation initiatives."
+      description: "Overseeing technological operations and ensuring seamless digital transformation initiatives."
     }
   ];
 

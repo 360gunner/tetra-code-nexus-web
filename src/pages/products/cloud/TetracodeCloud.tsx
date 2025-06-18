@@ -13,10 +13,10 @@ const TetracodeCloud = () => {
             <Badge className="mb-4 bg-white/20 text-white border-white/20" variant="secondary">Cloud & Hosting</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">TETRACODE Cloud</h1>
             <p className="text-xl text-white/90 mb-8">Enterprise cloud infrastructure platform for African businesses.</p>
-            <Button size="lg" className="bg-white text-sky-700 hover:bg-white/90">
+            {/*<Button size="lg" className="bg-white text-sky-700 hover:bg-white/90">
               <Cloud className="mr-2 h-5 w-5" />
               Get Started
-            </Button>
+            </Button>*/}
           </div>
         </div>
       </section>

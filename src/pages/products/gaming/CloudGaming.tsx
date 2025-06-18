@@ -13,10 +13,10 @@ const CloudGaming = () => {
             <Badge className="mb-4 bg-white/20 text-white border-white/20" variant="secondary">Gaming & Entertainment</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">TETRACODE Cloud Gaming</h1>
             <p className="text-xl text-white/90 mb-8">Stream games directly to any device with our cloud gaming platform.</p>
-            <Button size="lg" className="bg-white text-purple-700 hover:bg-white/90">
+            {/*<Button size="lg" className="bg-white text-purple-700 hover:bg-white/90">
               <Gamepad className="mr-2 h-5 w-5" />
               Play Now
-            </Button>
+            </Button>*/}
           </div>
         </div>
       </section>

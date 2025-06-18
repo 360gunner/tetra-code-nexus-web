@@ -95,6 +95,7 @@ const Leadership = () => {
       </section>
 
       {/* Join Our Team */}
+      {/* 
       <section className="py-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -110,6 +111,7 @@ const Leadership = () => {
           </div>
         </div>
       </section>
+      */}
     </div>
   );
 };

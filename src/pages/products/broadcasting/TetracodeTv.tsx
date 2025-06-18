@@ -19,7 +19,7 @@ const TetracodeTv = () => {
             <p className="text-xl text-white/90 mb-8">
               Next-generation streaming platform delivering live and on-demand content across Africa with adaptive streaming technology.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+           {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-orange-900 hover:bg-white/90">
                 <Play className="mr-2 h-5 w-5" />
                 Start Streaming
@@ -27,7 +27,7 @@ const TetracodeTv = () => {
               <Button variant="outline" size="lg" asChild className="border-white text-white hover:bg-white hover:text-orange-900">
                 <Link to="/contact/request-demo">Request Demo</Link>
               </Button>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
@@ -107,7 +107,7 @@ const TetracodeTv = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      {/*<section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -121,7 +121,7 @@ const TetracodeTv = () => {
             </Button>
           </div>
         </div>
-      </section>
+      </section>*/}
     </div>
   );
 };

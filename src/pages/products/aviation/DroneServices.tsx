@@ -17,10 +17,10 @@ const DroneServices = () => {
             <p className="text-xl text-white/90 mb-8">
               Advanced unmanned aerial vehicle solutions for surveillance, delivery, mapping, and agricultural applications across Africa.
             </p>
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-white/90">
+            {/*<Button size="lg" className="bg-white text-blue-900 hover:bg-white/90">
               <Plane className="mr-2 h-5 w-5" />
               Explore Services
-            </Button>
+            </Button>*/}
           </div>
         </div>
       </section>

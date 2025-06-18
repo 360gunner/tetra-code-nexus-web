@@ -15,10 +15,10 @@ const TetracodeMeet = () => {
             <p className="text-xl text-white/90 mb-8">
               Secure video conferencing platform designed for African businesses with offline-first capabilities.
             </p>
-            <Button size="lg" className="bg-white text-blue-700 hover:bg-white/90">
+            {/*<Button size="lg" className="bg-white text-blue-700 hover:bg-white/90">
               <Video className="mr-2 h-5 w-5" />
               Start Meeting
-            </Button>
+            </Button>*/}
           </div>
         </div>
       </section>

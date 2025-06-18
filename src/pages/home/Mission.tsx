@@ -128,7 +128,7 @@ const Mission = () => {
                 <p className="text-lg text-muted-foreground mb-6">
                   We believe that Africa's future lies in technology and innovation. Our commitment goes beyond providing solutions – we're invested in building local capacity, fostering entrepreneurship, and creating sustainable economic opportunities across the continent.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                {/*<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                   <div>
                     <div className="text-3xl font-bold text-primary mb-2">10,000+</div>
                     <div className="text-muted-foreground">Local Jobs Created</div>
@@ -141,7 +141,7 @@ const Mission = () => {
                     <div className="text-3xl font-bold text-primary mb-2">$2B+</div>
                     <div className="text-muted-foreground">Economic Impact</div>
                   </div>
-                </div>
+                </div>*/}
               </CardContent>
             </Card>
           </div>

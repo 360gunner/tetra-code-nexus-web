@@ -13,10 +13,10 @@ const TetracodeAi = () => {
             <Badge className="mb-4 bg-white/20 text-white border-white/20" variant="secondary">AI & Innovation</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">TETRACODE AI</h1>
             <p className="text-xl text-white/90 mb-8">Cloud AI services platform with machine learning capabilities.</p>
-            <Button size="lg" className="bg-white text-indigo-700 hover:bg-white/90">
+            {/*<Button size="lg" className="bg-white text-indigo-700 hover:bg-white/90">
               <Bot className="mr-2 h-5 w-5" />
               Try AI Services
-            </Button>
+            </Button>*/}
           </div>
         </div>
       </section>
