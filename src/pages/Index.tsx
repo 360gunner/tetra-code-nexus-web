@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Play, Users, Globe, Zap, Shield, Rocket } from "lucide-react";
+import { ArrowRight, Users, Globe, Zap, Shield, Rocket } from "lucide-react";
 
 const Index = () => {
   const productCategories = [
@@ -90,13 +90,9 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
               <Button asChild size="lg" className="text-lg px-8">
-                <Link to="/contact/request-demo">
+                <Link to="/contact">
                   Request Demo <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8">
-                <Play className="mr-2 h-5 w-5" />
-                Watch Overview
               </Button>
             </div>
           </div>
@@ -230,12 +226,9 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
-                <Link to="/contact/get-in-touch">
+                <Link to="/contact">
                   Get Started Today <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/about/our-story">Learn Our Story</Link>
               </Button>
             </div>
           </div>

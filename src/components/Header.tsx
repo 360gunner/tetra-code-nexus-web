@@ -16,14 +16,14 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const productCategories = [
-    { title: "Broadcasting & Media", href: "/products/broadcasting" },
-    { title: "Aviation & Aerospace", href: "/products/aviation" },
-    { title: "SaaS & Communication", href: "/products/saas" },
-    { title: "Fintech & Banking", href: "/products/fintech" },
-    { title: "Cloud & Hosting", href: "/products/cloud" },
-    { title: "Gaming & Entertainment", href: "/products/gaming" },
-    { title: "AI & Innovation", href: "/products/ai" },
-    { title: "Mobile & Super Apps", href: "/products/mobile" }
+    { title: "Broadcasting & Media", href: "/products/broadcasting/tetracode-tv" },
+    { title: "Aviation & Aerospace", href: "/products/aviation/drone-services" },
+    { title: "SaaS & Communication", href: "/products/saas/tetracode-meet" },
+    { title: "Fintech & Banking", href: "/products/fintech/mobix" },
+    { title: "Cloud & Hosting", href: "/products/cloud/tetracode-cloud" },
+    { title: "Gaming & Entertainment", href: "/products/gaming/cloud-gaming" },
+    { title: "AI & Innovation", href: "/products/ai/tetracode-ai" },
+    { title: "Mobile & Super Apps", href: "/products/mobile/app-store" }
   ];
 
   return (
@@ -151,7 +151,7 @@ const Header = () => {
           {/* Right side */}
           <div className="flex items-center space-x-4">
             <Button asChild className="hidden lg:inline-flex">
-              <Link to="/contact/request-demo">Request Demo</Link>
+              <Link to="/contact">Request Demo</Link>
             </Button>
             
             {/* Mobile menu button */}
