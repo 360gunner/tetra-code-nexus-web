@@ -34,7 +34,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/7436b0e1-9ebc-417d-841e-5a9ee17103a4.png" 
               alt="2MP Services Logo" 
-              className="h-10 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
