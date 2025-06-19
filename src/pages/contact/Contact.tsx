@@ -79,7 +79,7 @@ const Contact = () => {
                   >
                     <a href="tel:+21325283946">
                       <Phone className="mr-2 h-4 w-4" />
-                      +213 25 283 946
+                      +213 25 283 990
                     </a>
                   </Button>
                   <Button 
